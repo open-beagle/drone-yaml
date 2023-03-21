@@ -109,6 +109,7 @@ type (
 		Arch    string `json:"arch,omitempty"`
 		Variant string `json:"variant,omitempty"`
 		Version string `json:"version,omitempty"`
+		Runner  string `json:"runner,omitempty"`
 	}
 
 	// Volume that can be mounted by containers.
