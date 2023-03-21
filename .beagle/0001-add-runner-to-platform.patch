@@ -1,0 +1,24 @@
+From a7d1b92986e75f8156d2b06008d5853f1c5b504f Mon Sep 17 00:00:00 2001
+From: shucheng <shucheng@bd-apaas.com>
+Date: Mon, 21 Jun 2021 01:26:17 +0800
+Subject: [PATCH 1/2] add runner to platform
+
+---
+ yaml/pipeline.go | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/yaml/pipeline.go b/yaml/pipeline.go
+index 8e49e26..0f864de 100644
+--- a/yaml/pipeline.go
++++ b/yaml/pipeline.go
+@@ -109,6 +109,7 @@ type (
+ 		Arch    string `json:"arch,omitempty"`
+ 		Variant string `json:"variant,omitempty"`
+ 		Version string `json:"version,omitempty"`
++		Runner  string `json:"runner,omitempty"`
+ 	}
+ 
+ 	// Volume that can be mounted by containers.
+-- 
+2.25.1
+
